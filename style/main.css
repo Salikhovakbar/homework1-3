@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0px 5px 10px 0px gray;
+    top: 0;
+}
+.app-logo{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+cursor: pointer;
+}
+.app-logo:first-child{
+    width: 20px;
+    height: 15px;
+    margin-left: 0;
+}
+.app-logo:last-child{
+    width: 25px;
+    height: 30px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(24, 3, 56);
+}
+.header-collection{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.header-items{
+    margin-left: 33px;
+}
+.header-items:first-child{
+    margin-left: 0;
+}
+.header-link{
+    color: rgb(15, 0, 38);
+}
+.header-link:hover{
+    color: gold;
+    transition: 1s;
+    font-style: italic;
+}
+.header-link:focus{
+    color: orange;
+    transition: -1s;
+}
+a{
+    text-decoration: none;
+}
+.img_style{
+    width: 770px;
+    height: 600px;
+    object-fit: cover;
+}
+.box_style{
+    text-align: center;
+margin-bottom: 180px;
+}
+h5{
+color: white;
+font-size: 22px;
+}
+.hero_text{
+    color: white;
+    font-size: 35px;
+}
+.carousel_text{
+color: white;
+font-size: 20px;
+}
+.container-photoes{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box-main-photo{
+    margin-top: 40px;
+    width: 300px;
+    box-shadow: 3px 5px 5px  gray;
+    border-radius: 15px;
+}
+.main-photo{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+.main-btn{
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+.main-text{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 16px;
+}
+.date{
+    text-align: center;
+    color: gray;
+}
+.header-text{
+    color: black;
+}
+.btn{
+    display: none;
+}
+@media only screen and (max-width: 700px){
+    nav{
+        display: none;
+    }
+    .header_apps{
+        display: none;
+    }
+    .btn{
+        display: block;
+    }
+    .container-photoes{
+        display: block;
+       margin: auto;
+       margin-left: 50px;
+    }
+}
